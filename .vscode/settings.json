@@ -1,0 +1,7 @@
+{
+  "editor.tokenColorCustomizations": {
+    "comments": "#888888"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+}

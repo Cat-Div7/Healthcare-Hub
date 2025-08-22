@@ -1,0 +1,13 @@
+:root {
+  --bg-dark: #14162E;
+  --bg-light: #F3F3FD;
+  --primary-color: #4461F2;
+  --primary-alt-color: #324ad9;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+  --font-awsome: 'FontAwsome 6 Free';
+  --transition: all 0.3s ease;
+
+  --gradient: linear-gradient(to right, #3A8EF6, #6F3AFA);
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

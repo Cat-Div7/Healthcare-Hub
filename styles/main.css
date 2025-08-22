@@ -1,0 +1,228 @@
+@import "./_variables.css";
+@import "./media.css";
+/* Helpers */
+.text-primary {
+  color: var(--primary-color);
+}
+.transition {
+  transition: var(--transition);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.b-rd-12 {
+  border-radius: 12px;
+}
+
+.rounded-pill {
+  border-radius: 50px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+.p-4 {
+  padding: calc(1rem + (1rem / 3));
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: white;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login Content */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+/* Logo Content */
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo::after {
+  content: "\2b";
+  font-family: var(--font-awsome);
+  font-weight: 900;
+  color: var(--bg-light);
+  background-color: var(--primary-color);
+  position: relative;
+  font-size: 25px;
+  top: -13px;
+  right: 15px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+header .logo h3 {
+  font-weight: 600;
+  font-size: clamp(20px, 3vw, 30px);
+  margin: 10px 10px 0;
+  /* Gradient Text */
+  background: var(--gradient);
+  width: fit-content;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+/* Navbar Links */
+.links,
+.options {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
+}
+
+.links li a,
+.options li a {
+  padding: 10px;
+  font-size: clamp(14px, 2vw, 18px);
+  transition: var(--transition);
+}
+
+/* Navbar Options */
+
+.options li.language-dropdown {
+  cursor: pointer;
+  position: relative;
+  min-width: 60px;
+  color: var(--bg-light);
+  padding: 5px 10px;
+  border-radius: 8px;
+  z-index: 100;
+  font-size: 16px;
+  box-shadow: 0 1.5px 4px 10px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 1.5px 4px rgba(0, 0, 0, 0.06); */
+  /* transition: var(--transition); */
+}
+.options li.language-dropdown:hover {
+  transition: var(--transition);
+  color: var(--primary-color);
+}
+.active-dropdown {
+  background-color: var(--bg-light);
+  color: var(--primary-color) !important;
+}
+/* language-dropdown List */
+.options li.language-dropdown ul {
+  color: var(--primary-color);
+  background: var(--bg-light);
+  position: absolute;
+  top: 102%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  border-radius: 0 0 8px 8px;
+  z-index: 100;
+  display: none;
+}
+
+.options li.language-dropdown ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 0 0 8px 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.options li.language-dropdown ul li:hover {
+  background: var(--primary-color);
+  color: var(--bg-light);
+}
+
+.options .language-dropdown ul.d-block {
+  display: block;
+  box-shadow: 0 20px 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+}
+/* Current Page li */
+.options li:nth-child(2) a {
+  position: relative;
+}
+.options li:nth-child(2) a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+}
+
+.active,
+header li a:hover {
+  color: var(--primary-color);
+}
+/* Register Button */
+.register:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--bg-light) !important;
+}
+.light-register {
+  background: var(--gradient);
+  color: white !important;
+  transform: translateY(-20px);
+}
+.register-container:hover {
+  transform: translateY(-2px);
+}
+
+/* Change Background Button */
+.change-bg-c {
+  background-color: var(--primary-color);
+  color: var(--bg-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.change-bg-c:hover {
+  background-color: var(--primary-alt-color);
+}

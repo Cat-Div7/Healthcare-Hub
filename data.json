@@ -1,0 +1,52 @@
+{
+  "en": {
+    "headTitle": "HealthCare Hub",
+    "navbar": {
+      "links": [
+        {
+          "name": "Home"
+        },
+        {
+          "name": "About Us"
+        },
+        {
+          "name": "How to use"
+        }
+      ],
+      "options": [
+        {
+          "name": "Sign in"
+        },
+        {
+          "name": "Register"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "headTitle": "مركز الصحه",
+    "navbar": {
+      "links": [
+        {
+          "name": "الرئيسية"
+        },
+        {
+          "name": "من نحن"
+        },
+        {
+          "name": "كيفية الاستخدام"
+        }
+      ],
+      "options": [
+        {
+          "name": "تسجيل الدخول",
+          "url": "#"
+        },
+        {
+          "name": "إنشاء حساب",
+          "url": "#"
+        }
+      ]
+    }
+  }
+}
